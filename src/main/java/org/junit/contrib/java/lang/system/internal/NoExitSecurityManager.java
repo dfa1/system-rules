@@ -36,7 +36,6 @@ public class NoExitSecurityManager extends SecurityManager {
 				"checkExit(int) has not been called.");
 	}
 
-	@Override
 	public boolean getInCheck() {
 		return (originalSecurityManager != null)
 			&& originalSecurityManager.getInCheck();
